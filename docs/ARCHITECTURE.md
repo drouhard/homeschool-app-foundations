@@ -104,6 +104,7 @@ All code is written in TypeScript with strict mode enabled. This catches errors 
 ### 2. Component-Driven Development
 
 Components are:
+
 - Small and focused on a single responsibility
 - Fully typed with TypeScript
 - Tested with unit and integration tests
@@ -113,6 +114,7 @@ Components are:
 ### 3. Test-Driven Development
 
 Every component and utility has corresponding tests:
+
 - Unit tests for individual functions
 - Component tests for UI behavior
 - Integration tests for user flows
@@ -121,6 +123,7 @@ Every component and utility has corresponding tests:
 ### 4. Code Quality Automation
 
 Quality is enforced through:
+
 - **Pre-commit hooks**: Run checks before commit
 - **CI/CD pipeline**: Validate all changes
 - **Linting**: Catch common errors
@@ -130,6 +133,7 @@ Quality is enforced through:
 ### 5. Security by Default
 
 Security measures include:
+
 - Security headers in Next.js config
 - Content Security Policy (CSP)
 - Environment variable validation
@@ -147,6 +151,7 @@ Security measures include:
 **Decision**: Use the App Router instead of the Pages Router.
 
 **Consequences**:
+
 - Better performance with Server Components
 - Improved data fetching patterns
 - Native support for streaming
@@ -162,6 +167,7 @@ Security measures include:
 **Decision**: Use Vitest instead of Jest.
 
 **Consequences**:
+
 - Faster test execution (2-10x)
 - Native ESM support
 - Better TypeScript integration
@@ -177,6 +183,7 @@ Security measures include:
 **Decision**: Enable all strict mode options plus additional checks.
 
 **Consequences**:
+
 - Catch more errors at compile time
 - Better IDE support and autocomplete
 - More verbose type annotations required
@@ -192,6 +199,7 @@ Security measures include:
 **Decision**: Use CSS Modules as the default, easily extensible to Tailwind.
 
 **Consequences**:
+
 - Scoped styles prevent conflicts
 - Zero runtime overhead
 - Standard CSS syntax
@@ -207,6 +215,7 @@ Security measures include:
 **Decision**: Structure code to be easily migrated to a monorepo.
 
 **Consequences**:
+
 - Clear separation of concerns
 - Easier to extract packages later
 - Simpler imports with path aliases
@@ -222,6 +231,7 @@ User Request → Next.js Server → React Server Component
 ```
 
 Server Components:
+
 - Fetch data on the server
 - No JavaScript sent to client
 - Better performance and SEO
@@ -235,6 +245,7 @@ User Interaction → Client Component → State Update
 ```
 
 Client Components:
+
 - Use React hooks
 - Interactive behavior
 - Client-side state management
@@ -328,6 +339,7 @@ describe('User Login Flow', () => {
 ### 3. Headers
 
 Security headers configured in `next.config.ts`:
+
 - `Strict-Transport-Security`
 - `X-Frame-Options`
 - `X-Content-Type-Options`
@@ -336,6 +348,7 @@ Security headers configured in `next.config.ts`:
 ### 4. Authentication
 
 When implementing authentication:
+
 - Use established libraries (NextAuth.js)
 - Implement CSRF protection
 - Use secure session management

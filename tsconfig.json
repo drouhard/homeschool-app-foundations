@@ -4,13 +4,11 @@
     "target": "ES2022",
     "lib": ["dom", "dom.iterable", "esnext"],
     "jsx": "preserve",
-
     // Modules
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "allowImportingTsExtensions": false,
-
     // Type Checking - Strict Mode
     "strict": true,
     "noUncheckedIndexedAccess": true,
@@ -21,20 +19,16 @@
     "allowUnusedLabels": false,
     "allowUnreachableCode": false,
     "exactOptionalPropertyTypes": true,
-
     // Emit
     "noEmit": true,
     "incremental": true,
-
     // Interop Constraints
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
-
     // Skip Lib Check
     "skipLibCheck": true,
-
     // Path Mapping
     "baseUrl": ".",
     "paths": {
@@ -46,25 +40,14 @@
       "@/utils/*": ["./src/utils/*"],
       "@/styles/*": ["./src/styles/*"]
     },
-
     // Next.js specific
     "plugins": [
       {
         "name": "next"
       }
-    ]
+    ],
+    "allowJs": true
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    ".next",
-    "out",
-    "dist",
-    "build"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules", ".next", "out", "dist", "build"]
 }

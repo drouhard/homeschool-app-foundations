@@ -23,7 +23,7 @@ describe('Welcome', () => {
     const user = userEvent.setup();
     render(<Welcome />);
 
-    const button = screen.getByRole('button', { name: /Count:/i });
+    const button = screen.getByRole('button', { name: /Increment counter/i });
     expect(button).toHaveTextContent('Count: 0');
 
     await user.click(button);

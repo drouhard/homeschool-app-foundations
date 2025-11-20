@@ -4,7 +4,7 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Homeschool App',
   description: 'A modern foundation for building homeschool applications',
-  authors: [{ name: 'Matt Drouhard', email: 'matt.drouhard@betterup.co' }],
+  authors: [{ name: 'Matt Drouhard' }],
   keywords: ['homeschool', 'education', 'learning', 'next.js', 'react'],
 };
 

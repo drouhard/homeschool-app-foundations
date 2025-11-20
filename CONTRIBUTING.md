@@ -29,27 +29,32 @@ This project and everyone participating in it is governed by our [Code of Conduc
 
 1. Fork the repository
 2. Clone your fork:
+
    ```bash
    git clone https://github.com/YOUR_USERNAME/homeschool-app-foundations.git
    cd homeschool-app-foundations
    ```
 
 3. Add upstream remote:
+
    ```bash
    git remote add upstream https://github.com/drouhard/homeschool-app-foundations.git
    ```
 
 4. Install dependencies:
+
    ```bash
    npm install
    ```
 
 5. Set up environment variables:
+
    ```bash
    cp .env.example .env.local
    ```
 
 6. Initialize Husky:
+
    ```bash
    npm run prepare
    ```
@@ -72,6 +77,7 @@ git checkout -b fix/your-bug-fix
 ```
 
 Branch naming conventions:
+
 - `feat/` - New features
 - `fix/` - Bug fixes
 - `docs/` - Documentation changes
@@ -114,6 +120,7 @@ git commit -m "feat: add new feature"
 ```
 
 The pre-commit hooks will automatically:
+
 - Run ESLint and fix issues
 - Format code with Prettier
 - Run TypeScript type checking
@@ -165,18 +172,22 @@ Then create a pull request on GitHub.
 
 ```markdown
 ## Description
+
 Brief description of the changes
 
 ## Type of Change
+
 - [ ] Bug fix
 - [ ] New feature
 - [ ] Breaking change
 - [ ] Documentation update
 
 ## Testing
+
 How to test these changes
 
 ## Checklist
+
 - [ ] Tests pass locally
 - [ ] Code follows style guidelines
 - [ ] Documentation updated
@@ -356,6 +367,7 @@ Fixes #456
 ### Bug Reports
 
 Include:
+
 - Clear, descriptive title
 - Steps to reproduce
 - Expected vs actual behavior
@@ -366,6 +378,7 @@ Include:
 ### Feature Requests
 
 Include:
+
 - Clear, descriptive title
 - Problem you're trying to solve
 - Proposed solution
@@ -376,32 +389,39 @@ Include:
 
 ```markdown
 ## Description
+
 Clear description of the issue
 
 ## Steps to Reproduce
+
 1. Step one
 2. Step two
 3. Step three
 
 ## Expected Behavior
+
 What should happen
 
 ## Actual Behavior
+
 What actually happens
 
 ## Environment
+
 - OS: [e.g., macOS 13.0]
 - Node: [e.g., 18.17.0]
 - npm: [e.g., 9.8.0]
 - Browser: [e.g., Chrome 120]
 
 ## Additional Context
+
 Any other relevant information
 ```
 
 ## 🎯 Where to Contribute
 
 Not sure where to start? Look for issues labeled:
+
 - `good first issue` - Good for newcomers
 - `help wanted` - Extra attention needed
 - `bug` - Bug fixes needed

@@ -12,7 +12,8 @@ export function Welcome() {
         <h1 className={styles.title}>Welcome to Homeschool App Foundations</h1>
 
         <p className={styles.description}>
-          A modern, production-ready foundation built with Next.js 14, TypeScript, and best practices.
+          A modern, production-ready foundation built with Next.js 14, TypeScript, and best
+          practices.
         </p>
 
         <div className={styles.features}>
@@ -64,10 +65,7 @@ export function Welcome() {
         </div>
 
         <div className={styles.actions}>
-          <a
-            href="#getting-started"
-            className={styles.primaryButton}
-          >
+          <a href="#getting-started" className={styles.primaryButton}>
             Get Started
           </a>
           <a

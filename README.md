@@ -148,6 +148,7 @@ This project follows the [Conventional Commits](https://www.conventionalcommits.
 ```
 
 Types:
+
 - `feat`: New feature
 - `fix`: Bug fix
 - `docs`: Documentation changes
@@ -160,6 +161,7 @@ Types:
 - `chore`: Other changes
 
 Example:
+
 ```
 feat(auth): add user authentication
 
@@ -254,6 +256,7 @@ docker run -p 3000:3000 --env-file .env.local homeschool-app
 ### Other Platforms
 
 This is a standard Next.js application and can be deployed to:
+
 - AWS (Amplify, EC2, ECS, Lambda)
 - Google Cloud (Cloud Run, App Engine)
 - Azure (App Service, Container Instances)
@@ -313,6 +316,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Matt Drouhard**
+
 - Email: matt.drouhard@betterup.co
 - GitHub: [@drouhard](https://github.com/drouhard)
 

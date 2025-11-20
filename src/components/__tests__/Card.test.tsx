@@ -14,16 +14,12 @@ describe('Card', () => {
   });
 
   it('should render footer when provided', () => {
-    render(
-      <Card footer={<button>Action</button>}>Card content</Card>
-    );
+    render(<Card footer={<button>Action</button>}>Card content</Card>);
     expect(screen.getByRole('button', { name: 'Action' })).toBeInTheDocument();
   });
 
   it('should apply custom className', () => {
-    const { container } = render(
-      <Card className="custom-class">Card content</Card>
-    );
+    const { container } = render(<Card className="custom-class">Card content</Card>);
     expect(container.firstChild).toHaveClass('custom-class');
   });
 

@@ -35,20 +35,8 @@ export interface CardProps {
  * Reusable Card component
  * Demonstrates component composition and variant patterns
  */
-export function Card({
-  title,
-  children,
-  footer,
-  variant = 'default',
-  className,
-}: CardProps) {
-  const cardClass = [
-    styles.card,
-    styles[variant],
-    className,
-  ]
-    .filter(Boolean)
-    .join(' ');
+export function Card({ title, children, footer, variant = 'default', className }: CardProps) {
+  const cardClass = [styles.card, styles[variant], className].filter(Boolean).join(' ');
 
   return (
     <div className={cardClass}>
